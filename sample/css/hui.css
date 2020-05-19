@@ -1,0 +1,90 @@
+*{
+				padding: 0;
+				margin: 0;
+			}
+			.kaung{
+				display: none;
+				z-index: 99999999;
+				opacity: 1;
+				background-color: #ffffff;
+				width: 300px;
+				position:fixed;
+				top:50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				border-radius: 10px;
+				color:#000;
+				box-shadow:5px 5px 5px 2px #797979,
+							-5px -5px 5px 2px #797979,
+							-5px 5px 5px 2px #797979,
+							5px -5px 5px 2px #797979
+				 ;
+			}
+			.kaung .hu_title{
+				font-weight: 500;
+				font-size: 16px;
+				padding: 15px;
+				border-bottom: 1px solid #e5e5e5;
+				min-height: 16.54px;
+				position: relative;
+			}
+			.kaung .hu_title .guan{
+				position: absolute;
+				top:2px;
+				right: 10px;
+				background-color: #fff;
+				border: 0;
+				font-size: 18px;
+				color: #666;
+			}
+			.kaung .hu_title .guan:hover{
+				color: #000;
+			}
+			.kaung .hu_nr{
+				padding: 15px;
+				border-bottom: 1px solid #e5e5e5;
+			}
+			.kaung .hu_nr h4{
+				font-size: 16px;
+				font-weight: 500;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.kaung .hu_nr p{
+				font-size: 14px;
+				font-weight: 400;
+				margin-bottom: 10px;
+			}
+			.kaung .hu_an{
+				padding:15px;
+				text-align: right;
+			}
+			.kaung .hu_an .hu_ann{
+				display: inline-block;
+				padding: 5px 12px;
+				margin-bottom: 0;
+				font-size: 13px;
+				font-weight: 400;
+				text-align: center;
+				border-radius:5px;
+				border: 1px solid transparent;
+			}
+			#hu_que{
+				background-color: #3280fc;
+				color:#fff;
+			}
+			#hu_que:hover{
+				background-color: #1970fc;
+			}
+			#hu_qu:hover{
+				background-color: #ccc;
+			}
+			.hu_in{
+				display: none;
+				position:fixed;
+				top:0;
+				width: 100%;
+				height: 100%;
+				background-color: #000;
+				opacity: 0.5;
+			}
