@@ -26,29 +26,29 @@
 </html>
 <script src="js/swipe-lc-1.0.0.min.js"></script>
 <script>	
-	var xin = document.querySelector("#xin");
-	// 初始化参数
-	var obj = {
-		hukW:"500",// 绘画框的宽度,如果不设置默认值为300px;
-		guan:0, //为1时禁用右上角的x号按钮，默认为0;
-		bacolor:"#fff", // 可以设置对话框的背景颜色,也可以不设置，默认为白色
-		guanl:function(){
-			// 用户点击右上角x号时调用的函数，该参数可有可无
-			console.log(1)
-		},
-		que:que,
-		quxiao:quxiao
-	}
-	var dui = new Huihua(obj);
 	xin.onclick = function(){
+		// 初始化参数
+		var obj = {
+			hukW:"500",// 绘画框的宽度,如果不设置默认值为300px;
+			guan:0, //为1时禁用右上角的x号按钮，默认为0;
+			bacolor:"#fff", // 可以设置对话框的背景颜色,也可以不设置，默认为白色
+			guanl:function(){
+				// 用户点击右上角x号时调用的函数，该参数可有可无
+				console.log(1)
+			},
+			que:que,
+			quxiao:quxiao,
+			tit:"标题1",
+			tit1:"内容1",
+			tits:"内容详细11111111"
+		}
+		var dui = new Huihua(obj);
 		dui.xian(); // 调用xian()方法显示对话框
-	}
-	function que(){
-		// 用户点击确定时执行该函数操作
-		dui.yin(); // 隐藏会话框
-	}
-	function quxiao(){
-		// 用户点击取消时执行该函数操作
-		dui.yin(); // 隐藏会话框
+		function que(){
+			
+		}
+		function quxiao(){
+			
+		}
 	}
 </script>
